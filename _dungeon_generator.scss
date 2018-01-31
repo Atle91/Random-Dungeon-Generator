@@ -1,0 +1,81 @@
+.root {
+  display: flex;
+  justify-content: center
+}
+.row {
+  display: flex;
+  justify-content: center;
+  color: black
+}
+.cell{
+  float:left;
+  height:1.5vw;
+  width: 1.5vw;
+  max-height: 12px;
+  max-width: 12px;
+}
+.room{
+  background: url("../images/corridor.jpg")
+}
+.floor{
+  background: grey;
+  border: 1px solid
+}
+.door{
+  background: red;
+}
+.corridor{
+  background: url("../images/corridor.jpg")
+}
+.unused{
+  height: 1em;
+  width: 1em;
+  background: red
+}
+.player{
+  height: 1em;
+  width: 1em;
+  background: black
+}
+.Minion{
+  height: 1em;
+  width: 1em;
+  background: red
+}
+.wall{
+  background: black
+}
+
+.dungeon-board{
+
+  margin:auto;
+}
+.purple{
+  height: 1em;
+  width: 1em;
+  background: green
+}
+.dark{
+  background: black
+}
+.generate{
+  position:absolute;
+  background:none;
+  border:none;
+  outline:none;
+  color: hsl(24, 51%, 45%);
+  font-size: 30px;
+  font-weight: 700;
+  font-family: Raleway;
+  cursor:pointer;
+  margin:auto;
+  bottom:0;
+  @include center-horizontal(true);
+}
+.generate:hover{
+  color: hsl(24, 75%, 76%);
+}
+#ignore{
+  display:block;
+  opacity: 0;
+}
